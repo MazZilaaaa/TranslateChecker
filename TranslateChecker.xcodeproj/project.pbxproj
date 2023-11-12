@@ -14,6 +14,22 @@
 		FAD471AA2B013FB500C01009 /* TranslateCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471A92B013FB500C01009 /* TranslateCheckerTests.swift */; };
 		FAD471B42B013FB500C01009 /* TranslateCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471B32B013FB500C01009 /* TranslateCheckerUITests.swift */; };
 		FAD471B62B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471B52B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift */; };
+		FAE4921F2B014F82008578BE /* WordListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4921E2B014F82008578BE /* WordListPresenter.swift */; };
+		FAE492212B014F9F008578BE /* WordListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492202B014F9F008578BE /* WordListConfigurator.swift */; };
+		FAE492232B014FDF008578BE /* WordListInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492222B014FDF008578BE /* WordListInput.swift */; };
+		FAE492252B01502C008578BE /* WordListOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492242B01502C008578BE /* WordListOutput.swift */; };
+		FAE492272B01508B008578BE /* WordListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492262B01508B008578BE /* WordListService.swift */; };
+		FAE492292B0150D1008578BE /* WordListFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492282B0150D1008578BE /* WordListFileService.swift */; };
+		FAE4922B2B015174008578BE /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4922A2B015174008578BE /* WordListViewController.swift */; };
+		FAE4922D2B0151A8008578BE /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4922C2B0151A8008578BE /* WordListView.swift */; };
+		FAE492322B0151DF008578BE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492312B0151DF008578BE /* Word.swift */; };
+		FAE492342B0153E0008578BE /* WordListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492332B0153E0008578BE /* WordListResponse.swift */; };
+		FAE492382B015AD6008578BE /* WordListFileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492372B015AD6008578BE /* WordListFileServiceTests.swift */; };
+		FAE492402B016121008578BE /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = FAE4923F2B016121008578BE /* words.json */; };
+		FAE492432B016A03008578BE /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492422B016A03008578BE /* FileReader.swift */; };
+		FAE492462B016E20008578BE /* DefaultFileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492452B016E1F008578BE /* DefaultFileReaderTests.swift */; };
+		FAE492492B01711E008578BE /* FileReaderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492482B01711E008578BE /* FileReaderMock.swift */; };
+		FAE492502B017320008578BE /* Word+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4924F2B017320008578BE /* Word+Stubs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +61,22 @@
 		FAD471AF2B013FB500C01009 /* TranslateCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD471B32B013FB500C01009 /* TranslateCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCheckerUITests.swift; sourceTree = "<group>"; };
 		FAD471B52B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCheckerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAE4921E2B014F82008578BE /* WordListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListPresenter.swift; sourceTree = "<group>"; };
+		FAE492202B014F9F008578BE /* WordListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListConfigurator.swift; sourceTree = "<group>"; };
+		FAE492222B014FDF008578BE /* WordListInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListInput.swift; sourceTree = "<group>"; };
+		FAE492242B01502C008578BE /* WordListOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListOutput.swift; sourceTree = "<group>"; };
+		FAE492262B01508B008578BE /* WordListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListService.swift; sourceTree = "<group>"; };
+		FAE492282B0150D1008578BE /* WordListFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListFileService.swift; sourceTree = "<group>"; };
+		FAE4922A2B015174008578BE /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		FAE4922C2B0151A8008578BE /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
+		FAE492312B0151DF008578BE /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		FAE492332B0153E0008578BE /* WordListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListResponse.swift; sourceTree = "<group>"; };
+		FAE492372B015AD6008578BE /* WordListFileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListFileServiceTests.swift; sourceTree = "<group>"; };
+		FAE4923F2B016121008578BE /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		FAE492422B016A03008578BE /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		FAE492452B016E1F008578BE /* DefaultFileReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFileReaderTests.swift; sourceTree = "<group>"; };
+		FAE492482B01711E008578BE /* FileReaderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReaderMock.swift; sourceTree = "<group>"; };
+		FAE4924F2B017320008578BE /* Word+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+Stubs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +127,8 @@
 		FAD471912B013FB000C01009 /* TranslateChecker */ = {
 			isa = PBXGroup;
 			children = (
+				FAE492412B0169F8008578BE /* Utils */,
+				FAE4921D2B014F29008578BE /* WordList */,
 				FAE0C1C42B0146D100ED2E53 /* Resources */,
 				FAD471922B013FB000C01009 /* AppDelegate.swift */,
 				FAD471942B013FB000C01009 /* SceneDelegate.swift */,
@@ -105,6 +139,9 @@
 		FAD471A82B013FB500C01009 /* TranslateCheckerTests */ = {
 			isa = PBXGroup;
 			children = (
+				FAE4924A2B01724F008578BE /* TestUtils */,
+				FAE492442B016E11008578BE /* Utils */,
+				FAE492352B015ABE008578BE /* WordList */,
 				FAD471A92B013FB500C01009 /* TranslateCheckerTests.swift */,
 			);
 			path = TranslateCheckerTests;
@@ -127,6 +164,105 @@
 				FAD471A02B013FB500C01009 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAE4921D2B014F29008578BE /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				FAE492302B0151D4008578BE /* Models */,
+				FAE4922F2B0151B9008578BE /* Services */,
+				FAE4922E2B0151AC008578BE /* Views */,
+				FAE4921E2B014F82008578BE /* WordListPresenter.swift */,
+				FAE492202B014F9F008578BE /* WordListConfigurator.swift */,
+				FAE492222B014FDF008578BE /* WordListInput.swift */,
+				FAE492242B01502C008578BE /* WordListOutput.swift */,
+			);
+			path = WordList;
+			sourceTree = "<group>";
+		};
+		FAE4922E2B0151AC008578BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAE4922A2B015174008578BE /* WordListViewController.swift */,
+				FAE4922C2B0151A8008578BE /* WordListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAE4922F2B0151B9008578BE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAE492262B01508B008578BE /* WordListService.swift */,
+				FAE492282B0150D1008578BE /* WordListFileService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAE492302B0151D4008578BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAE492312B0151DF008578BE /* Word.swift */,
+				FAE492332B0153E0008578BE /* WordListResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAE492352B015ABE008578BE /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				FAE492362B015AC6008578BE /* Services */,
+			);
+			path = WordList;
+			sourceTree = "<group>";
+		};
+		FAE492362B015AC6008578BE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAE492372B015AD6008578BE /* WordListFileServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAE492412B0169F8008578BE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAE492422B016A03008578BE /* FileReader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAE492442B016E11008578BE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAE492452B016E1F008578BE /* DefaultFileReaderTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAE492472B017116008578BE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FAE492482B01711E008578BE /* FileReaderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		FAE4924A2B01724F008578BE /* TestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				FAE4924E2B017313008578BE /* Stubs */,
+				FAE492472B017116008578BE /* Mocks */,
+			);
+			path = TestUtils;
+			sourceTree = "<group>";
+		};
+		FAE4924E2B017313008578BE /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				FAE4923F2B016121008578BE /* words.json */,
+				FAE4924F2B017320008578BE /* Word+Stubs.swift */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE492402B016121008578BE /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +396,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE492252B01502C008578BE /* WordListOutput.swift in Sources */,
+				FAE492232B014FDF008578BE /* WordListInput.swift in Sources */,
+				FAE4922B2B015174008578BE /* WordListViewController.swift in Sources */,
+				FAE492432B016A03008578BE /* FileReader.swift in Sources */,
+				FAE492212B014F9F008578BE /* WordListConfigurator.swift in Sources */,
 				FAD471932B013FB000C01009 /* AppDelegate.swift in Sources */,
+				FAE4921F2B014F82008578BE /* WordListPresenter.swift in Sources */,
+				FAE492322B0151DF008578BE /* Word.swift in Sources */,
+				FAE4922D2B0151A8008578BE /* WordListView.swift in Sources */,
+				FAE492342B0153E0008578BE /* WordListResponse.swift in Sources */,
+				FAE492292B0150D1008578BE /* WordListFileService.swift in Sources */,
+				FAE492272B01508B008578BE /* WordListService.swift in Sources */,
 				FAD471952B013FB000C01009 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +416,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE492492B01711E008578BE /* FileReaderMock.swift in Sources */,
+				FAE492462B016E20008578BE /* DefaultFileReaderTests.swift in Sources */,
 				FAD471AA2B013FB500C01009 /* TranslateCheckerTests.swift in Sources */,
+				FAE492502B017320008578BE /* Word+Stubs.swift in Sources */,
+				FAE492382B015AD6008578BE /* WordListFileServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +585,6 @@
 				INFOPLIST_FILE = TranslateChecker/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,7 +611,6 @@
 				INFOPLIST_FILE = TranslateChecker/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
