@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FA33078D2B025FD700105A26 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = FA33078C2B025FD700105A26 /* words.json */; };
+		FA3307922B0260D800105A26 /* DashboardInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3307912B0260D800105A26 /* DashboardInput.swift */; };
+		FA3307942B0260F200105A26 /* DashboardOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3307932B0260F200105A26 /* DashboardOutput.swift */; };
+		FA3307962B02616B00105A26 /* DashboardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3307952B02616B00105A26 /* DashboardConfigurator.swift */; };
+		FA3307982B02620B00105A26 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3307972B02620B00105A26 /* DashboardView.swift */; };
+		FA3307A32B02682B00105A26 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3307A22B02682B00105A26 /* DashboardViewModel.swift */; };
 		FAD471932B013FB000C01009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471922B013FB000C01009 /* AppDelegate.swift */; };
 		FAD471952B013FB000C01009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471942B013FB000C01009 /* SceneDelegate.swift */; };
 		FAD4719C2B013FB500C01009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD4719B2B013FB500C01009 /* Assets.xcassets */; };
 		FAD4719F2B013FB500C01009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD4719D2B013FB500C01009 /* LaunchScreen.storyboard */; };
 		FAD471AA2B013FB500C01009 /* TranslateCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471A92B013FB500C01009 /* TranslateCheckerTests.swift */; };
-		FAD471B42B013FB500C01009 /* TranslateCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471B32B013FB500C01009 /* TranslateCheckerUITests.swift */; };
 		FAD471B62B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471B52B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift */; };
 		FAE4921F2B014F82008578BE /* WordListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4921E2B014F82008578BE /* WordListPresenter.swift */; };
 		FAE492212B014F9F008578BE /* WordListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492202B014F9F008578BE /* WordListConfigurator.swift */; };
@@ -52,6 +56,11 @@
 
 /* Begin PBXFileReference section */
 		FA33078C2B025FD700105A26 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		FA3307912B0260D800105A26 /* DashboardInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInput.swift; sourceTree = "<group>"; };
+		FA3307932B0260F200105A26 /* DashboardOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardOutput.swift; sourceTree = "<group>"; };
+		FA3307952B02616B00105A26 /* DashboardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardConfigurator.swift; sourceTree = "<group>"; };
+		FA3307972B02620B00105A26 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FA3307A22B02682B00105A26 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		FAD4718F2B013FB000C01009 /* TranslateChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD471922B013FB000C01009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD471942B013FB000C01009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +70,6 @@
 		FAD471A52B013FB500C01009 /* TranslateCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD471A92B013FB500C01009 /* TranslateCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCheckerTests.swift; sourceTree = "<group>"; };
 		FAD471AF2B013FB500C01009 /* TranslateCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD471B32B013FB500C01009 /* TranslateCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCheckerUITests.swift; sourceTree = "<group>"; };
 		FAD471B52B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCheckerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FAE4921E2B014F82008578BE /* WordListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListPresenter.swift; sourceTree = "<group>"; };
 		FAE492202B014F9F008578BE /* WordListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListConfigurator.swift; sourceTree = "<group>"; };
@@ -106,6 +114,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA33078E2B02609F00105A26 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA3307992B0262DD00105A26 /* Views */,
+				FA3307952B02616B00105A26 /* DashboardConfigurator.swift */,
+				FA3307A22B02682B00105A26 /* DashboardViewModel.swift */,
+				FA3307912B0260D800105A26 /* DashboardInput.swift */,
+				FA3307932B0260F200105A26 /* DashboardOutput.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		FA3307992B0262DD00105A26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA3307972B02620B00105A26 /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA9877982B02A5B800EAFEAE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		FAD471862B013FB000C01009 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				FAE492412B0169F8008578BE /* Utils */,
+				FA33078E2B02609F00105A26 /* Dashboard */,
 				FAE4921D2B014F29008578BE /* WordList */,
 				FAE0C1C42B0146D100ED2E53 /* Resources */,
 				FAD471922B013FB000C01009 /* AppDelegate.swift */,
@@ -143,6 +179,7 @@
 			children = (
 				FAE4924A2B01724F008578BE /* TestUtils */,
 				FAE492442B016E11008578BE /* Utils */,
+				FA9877982B02A5B800EAFEAE /* Dashboard */,
 				FAE492352B015ABE008578BE /* WordList */,
 				FAD471A92B013FB500C01009 /* TranslateCheckerTests.swift */,
 			);
@@ -152,7 +189,6 @@
 		FAD471B22B013FB500C01009 /* TranslateCheckerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FAD471B32B013FB500C01009 /* TranslateCheckerUITests.swift */,
 				FAD471B52B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift */,
 			);
 			path = TranslateCheckerUITests;
@@ -175,8 +211,8 @@
 				FAE492302B0151D4008578BE /* Models */,
 				FAE4922F2B0151B9008578BE /* Services */,
 				FAE4922E2B0151AC008578BE /* Views */,
-				FAE4921E2B014F82008578BE /* WordListPresenter.swift */,
 				FAE492202B014F9F008578BE /* WordListConfigurator.swift */,
+				FAE4921E2B014F82008578BE /* WordListPresenter.swift */,
 				FAE492222B014FDF008578BE /* WordListInput.swift */,
 				FAE492242B01502C008578BE /* WordListOutput.swift */,
 			);
@@ -403,13 +439,18 @@
 				FAE492252B01502C008578BE /* WordListOutput.swift in Sources */,
 				FAE492232B014FDF008578BE /* WordListInput.swift in Sources */,
 				FAE4922B2B015174008578BE /* WordListViewController.swift in Sources */,
+				FA3307A32B02682B00105A26 /* DashboardViewModel.swift in Sources */,
+				FA3307962B02616B00105A26 /* DashboardConfigurator.swift in Sources */,
 				FAE492432B016A03008578BE /* FileReader.swift in Sources */,
 				FAE492212B014F9F008578BE /* WordListConfigurator.swift in Sources */,
 				FAD471932B013FB000C01009 /* AppDelegate.swift in Sources */,
 				FAE4921F2B014F82008578BE /* WordListPresenter.swift in Sources */,
 				FAE492322B0151DF008578BE /* Word.swift in Sources */,
 				FAE4922D2B0151A8008578BE /* WordListView.swift in Sources */,
+				FA3307942B0260F200105A26 /* DashboardOutput.swift in Sources */,
 				FAE492342B0153E0008578BE /* WordListResponse.swift in Sources */,
+				FA3307922B0260D800105A26 /* DashboardInput.swift in Sources */,
+				FA3307982B02620B00105A26 /* DashboardView.swift in Sources */,
 				FAE492292B0150D1008578BE /* WordListFileService.swift in Sources */,
 				FAE492272B01508B008578BE /* WordListService.swift in Sources */,
 				FAD471952B013FB000C01009 /* SceneDelegate.swift in Sources */,
@@ -432,7 +473,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD471B42B013FB500C01009 /* TranslateCheckerUITests.swift in Sources */,
 				FAD471B62B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
