@@ -1,4 +1,4 @@
-struct Word: Decodable {
+struct Word: Decodable, Equatable {
     let value: String
     let transaltionSpa: String
     

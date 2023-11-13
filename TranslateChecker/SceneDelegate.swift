@@ -39,20 +39,20 @@ extension SceneDelegate: TrainingWordsOutput {
         
         alert.addAction(
             UIAlertAction(
-                title: "ok",
+                title: "restart game",
                 style: .default,
                 handler:  { [weak self] _ in
-                    self?.window?.rootViewController?.dismiss(animated: true)
+                    self?.trainingWordsInput?.restart()
                 }
             )
         )
         
         alert.addAction(
             UIAlertAction(
-                title: "restart game",
+                title: "done",
                 style: .default,
                 handler:  { [weak self] _ in
-                    self?.trainingWordsInput?.restart()
+                    self?.window?.rootViewController?.dismiss(animated: true)
                 }
             )
         )

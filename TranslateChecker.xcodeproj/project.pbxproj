@@ -153,16 +153,40 @@
 		FA4D34DD2B02A81C00D3D6B2 /* TrainingWords */ = {
 			isa = PBXGroup;
 			children = (
-				FA4D34DE2B02A90400D3D6B2 /* TrainingWordsViewModel.swift */,
-				FA4D34E02B02A95F00D3D6B2 /* TrainingWordsView.swift */,
+				FA4D34F02B02C4C500D3D6B2 /* View */,
+				FA4D34EE2B02C4AD00D3D6B2 /* Models */,
+				FA4D34EF2B02C4B700D3D6B2 /* Services */,
 				FA4D34E22B02AE1900D3D6B2 /* TrainingWordsConfigurator.swift */,
+				FA4D34DE2B02A90400D3D6B2 /* TrainingWordsViewModel.swift */,
 				FA4D34E62B02AE6B00D3D6B2 /* TrainingWordsOutput.swift */,
-				FA4D34EC2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift */,
 				FA4D34E42B02AE4600D3D6B2 /* TrainingWordsInput.swift */,
-				FA4D34E82B02B73700D3D6B2 /* WordPairGenerator.swift */,
-				FA4D34EA2B02B78500D3D6B2 /* WordPair.swift */,
 			);
 			path = TrainingWords;
+			sourceTree = "<group>";
+		};
+		FA4D34EE2B02C4AD00D3D6B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D34EC2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift */,
+				FA4D34EA2B02B78500D3D6B2 /* WordPair.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA4D34EF2B02C4B700D3D6B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D34E82B02B73700D3D6B2 /* WordPairGenerator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA4D34F02B02C4C500D3D6B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D34E02B02A95F00D3D6B2 /* TrainingWordsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FA9877982B02A5B800EAFEAE /* Dashboard */ = {
