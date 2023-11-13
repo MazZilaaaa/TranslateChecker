@@ -34,11 +34,12 @@ extension WordListFileService: WordListService {
                     return
                 }
                 
-                let length = min(size, words.count - offset)
+                let size = min(size, words.count - offset)
+                let length = offset + size
                 let response = WordListResponse(
-                    words: words.suffix(length),
+                    words: Array(words[offset..<length]),
                     offset: offset,
-                    totalCount: length,
+                    totalCount: size,
                     hasMore: offset < words.count - size
                 )
                 

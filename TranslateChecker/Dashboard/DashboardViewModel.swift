@@ -15,7 +15,8 @@ extension DashboardViewModelImpl: DashboardInput {
 extension DashboardViewModelImpl: DashboardViewModel {
     
     func trainingDidTap() {
-        output?.trainingDidTap()
+        // we can improve dashboard view to provide proper words count
+        output?.trainingDidTap(wordsCount: 15)
     }
     
     func showAllWordsDidTap() {

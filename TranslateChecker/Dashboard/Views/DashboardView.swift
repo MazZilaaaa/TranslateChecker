@@ -15,7 +15,7 @@ struct DashboardView<ViewModelType: DashboardViewModel>: View {
             Button("Show all words") {
                 viewModel.showAllWordsDidTap()
             }
-            Button("Start train words") {
+            Button("Start training words") {
                 viewModel.trainingDidTap()
             }
         }

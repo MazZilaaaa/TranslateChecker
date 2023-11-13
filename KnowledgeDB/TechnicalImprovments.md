@@ -9,6 +9,7 @@
 | UI tests       | await            |
 | Routing        | await discussion |
 | Multi modules  | await discussion |
+| DI factory     | await discussion |
 
 ## XCConfigs
 Allows to set any building params before compile. It could be usefull to have alpha, beta and release instances of the app installed on device in the same time.
@@ -27,3 +28,6 @@ Invest some time and decide which routing pattern we can use for encapsulatig ro
 
 ## Multi modules
 We need to understand how many teams our ios deparment will have, in case we have more then 3 engineers or more than 1 team it would be important to support multi modules architecture. It will allow to bring tasks in parralel.
+
+## DI Factory
+It allows to encapsulate a creataion of instances of services and rest of components

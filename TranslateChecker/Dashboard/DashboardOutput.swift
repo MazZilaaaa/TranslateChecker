@@ -1,4 +1,4 @@
 protocol DashboardOutput: AnyObject {
-    func trainingDidTap()
+    func trainingDidTap(wordsCount: Int)
     func showAllWordsDidTap()
 }

@@ -4,11 +4,14 @@ public typealias WordListModule = (controller: UIViewController, input: WordList
 
 final class WordListConfigurator {
     func configure(output: WordListOutput? = nil) -> WordListModule {
-        let wordsURL = Bundle.main.url(forResource: "words", withExtension: "json")!
-        let wordListService = WordListFileService(wordFileURL: wordsURL, fileReader: DefaultFileReader())
-        let presenter = WordListPresenter(output: output, wordListService: wordListService)
+        let presenter = WordListPresenter(output: output, wordListService: getWordsService())
         let vc = WordListViewController()
         
         return (vc, presenter)
+    }
+    
+    func getWordsService() -> WordListFileService {
+        let wordsURL = Bundle.main.url(forResource: "words", withExtension: "json")!
+        return WordListFileService(wordFileURL: wordsURL, fileReader: DefaultFileReader())
     }
 }

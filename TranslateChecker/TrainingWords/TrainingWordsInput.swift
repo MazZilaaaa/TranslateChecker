@@ -1,0 +1,3 @@
+protocol TrainingWordsInput {
+    func restart()
+}

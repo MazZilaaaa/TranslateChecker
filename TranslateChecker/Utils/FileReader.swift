@@ -21,12 +21,14 @@ extension DefaultFileReader: FileReader {
     public func read(fileURL: URL, completion: @escaping (Result<Data, Error>) -> Void) {
         if let data: NSData = cache.object(forKey: fileURL as NSURL) {
             completion(.success(data as Data))
+            return
         }
         
-        queue.async {
+        queue.async { [cache] in
             var result: Result<Data, Error>
             do {
                 let data = try Data(contentsOf: fileURL)
+                cache.setObject(data as NSData, forKey: fileURL as NSURL)
                 result = .success(data)
             } catch {
                 result = .failure(error)

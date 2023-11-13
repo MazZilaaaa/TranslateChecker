@@ -3,6 +3,7 @@ import UIKit
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     private var dashboardInput: DashboardInput?
+    private var trainingWordsInput: TrainingWordsInput?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         window = UIWindow()
@@ -15,13 +16,48 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 
 extension SceneDelegate: DashboardOutput {
-    func trainingDidTap() {
-        print("show training module")
+    func trainingDidTap(wordsCount: Int) {
+        let module = TrainingWordsConfigurator().configure(wordsCountForTraining: wordsCount, output: self)
+        trainingWordsInput = module.input
+        
+        window?.rootViewController?.present(module.controller, animated: true)
     }
     
     func showAllWordsDidTap() {
         let wordsListModule = WordListConfigurator().configure()
         window?.rootViewController?.present(wordsListModule.controller, animated: true)
+    }
+}
+
+extension SceneDelegate: TrainingWordsOutput {
+    func didFinishGame(with score: TrainingWordsGameScore) {
+        let alert = UIAlertController(
+            title: "Your score is",
+            message: "correct attempts: \(score.correctAttempts)\nwrong attemtps: \(score.wrongAttempts)",
+            preferredStyle: .alert
+        )
+        
+        alert.addAction(
+            UIAlertAction(
+                title: "ok",
+                style: .default,
+                handler:  { [weak self] _ in
+                    self?.window?.rootViewController?.dismiss(animated: true)
+                }
+            )
+        )
+        
+        alert.addAction(
+            UIAlertAction(
+                title: "restart game",
+                style: .default,
+                handler:  { [weak self] _ in
+                    self?.trainingWordsInput?.restart()
+                }
+            )
+        )
+        
+        window?.rootViewController?.presentedViewController?.present(alert, animated: true)
     }
 }
 
