@@ -25,8 +25,6 @@
 		FAD471952B013FB000C01009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471942B013FB000C01009 /* SceneDelegate.swift */; };
 		FAD4719C2B013FB500C01009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD4719B2B013FB500C01009 /* Assets.xcassets */; };
 		FAD4719F2B013FB500C01009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD4719D2B013FB500C01009 /* LaunchScreen.storyboard */; };
-		FAD471AA2B013FB500C01009 /* TranslateCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471A92B013FB500C01009 /* TranslateCheckerTests.swift */; };
-		FAD471B62B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471B52B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift */; };
 		FAE4921F2B014F82008578BE /* WordListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4921E2B014F82008578BE /* WordListPresenter.swift */; };
 		FAE492212B014F9F008578BE /* WordListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492202B014F9F008578BE /* WordListConfigurator.swift */; };
 		FAE492232B014FDF008578BE /* WordListInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492222B014FDF008578BE /* WordListInput.swift */; };
@@ -84,9 +82,7 @@
 		FAD4719E2B013FB500C01009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD471A02B013FB500C01009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD471A52B013FB500C01009 /* TranslateCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD471A92B013FB500C01009 /* TranslateCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCheckerTests.swift; sourceTree = "<group>"; };
 		FAD471AF2B013FB500C01009 /* TranslateCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD471B52B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateCheckerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FAE4921E2B014F82008578BE /* WordListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListPresenter.swift; sourceTree = "<group>"; };
 		FAE492202B014F9F008578BE /* WordListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListConfigurator.swift; sourceTree = "<group>"; };
 		FAE492222B014FDF008578BE /* WordListInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListInput.swift; sourceTree = "<group>"; };
@@ -201,7 +197,6 @@
 			children = (
 				FAD471912B013FB000C01009 /* TranslateChecker */,
 				FAD471A82B013FB500C01009 /* TranslateCheckerTests */,
-				FAD471B22B013FB500C01009 /* TranslateCheckerUITests */,
 				FAD471902B013FB000C01009 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -237,17 +232,8 @@
 				FAE492442B016E11008578BE /* Utils */,
 				FA9877982B02A5B800EAFEAE /* Dashboard */,
 				FAE492352B015ABE008578BE /* WordList */,
-				FAD471A92B013FB500C01009 /* TranslateCheckerTests.swift */,
 			);
 			path = TranslateCheckerTests;
-			sourceTree = "<group>";
-		};
-		FAD471B22B013FB500C01009 /* TranslateCheckerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FAD471B52B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift */,
-			);
-			path = TranslateCheckerUITests;
 			sourceTree = "<group>";
 		};
 		FAE0C1C42B0146D100ED2E53 /* Resources */ = {
@@ -527,7 +513,6 @@
 			files = (
 				FAE492492B01711E008578BE /* FileReaderMock.swift in Sources */,
 				FAE492462B016E20008578BE /* DefaultFileReaderTests.swift in Sources */,
-				FAD471AA2B013FB500C01009 /* TranslateCheckerTests.swift in Sources */,
 				FAE492502B017320008578BE /* Word+Stubs.swift in Sources */,
 				FAE492382B015AD6008578BE /* WordListFileServiceTests.swift in Sources */,
 			);
@@ -537,7 +522,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD471B62B013FB500C01009 /* TranslateCheckerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
