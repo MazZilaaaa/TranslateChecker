@@ -1,10 +1,3 @@
-//
-//  TranslateCheckerTests.swift
-//  TranslateCheckerTests
-//
-//  Created by Alex on 12.11.2023.
-//
-
 import XCTest
 @testable import TranslateChecker
 

@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TranslateChecker
-//
-//  Created by Alex on 12.11.2023.
-//
-
 import UIKit
 
 @main

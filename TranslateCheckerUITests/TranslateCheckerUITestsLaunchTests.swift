@@ -1,10 +1,3 @@
-//
-//  TranslateCheckerUITestsLaunchTests.swift
-//  TranslateCheckerUITests
-//
-//  Created by Alex on 12.11.2023.
-//
-
 import XCTest
 
 final class TranslateCheckerUITestsLaunchTests: XCTestCase {

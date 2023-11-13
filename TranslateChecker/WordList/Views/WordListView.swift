@@ -1,10 +1,3 @@
-//
-//  WordListView.swift
-//  TranslateChecker
-//
-//  Created by Alex on 12.11.2023.
-//
-
 import SwiftUI
 
 struct WordListView: View {
