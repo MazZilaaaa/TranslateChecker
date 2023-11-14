@@ -9,7 +9,7 @@ struct DashboardView<ViewModelType: DashboardViewModel>: View {
         VStack {
             Form {
                 Picker(selection: $roundTime, label: Text("Select round time")) {
-                    ForEach([5, 3, 2], id: \.self) { value in
+                    ForEach([5, 3, 2, 1], id: \.self) { value in
                         Text("\(value)")
                     }
                 }

@@ -1,6 +1,8 @@
+import Foundation
 @testable import TranslateChecker
 
 final class TrainingWordGameMock: TrainingWordsGameProtocol {
+    
     var setWordsCount: Int?
     func setWordsCount(_ count: Int) {
         setWordsCount = count
@@ -16,5 +18,6 @@ final class TrainingWordGameMock: TrainingWordsGameProtocol {
         self.checkRoundStatus = status
     }
     
-    
+    func setRoundTime(_ time: TimeInterval) {
+    }
 }

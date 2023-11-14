@@ -2,6 +2,7 @@ import SwiftUI
 
 struct TrainingWordsView<ViewModelType: TrainingWordsViewModel>: View {
     @StateObject var viewModel: ViewModelType
+    @State private var animating: Bool = false
     
     var body: some View {
         ZStack {
@@ -14,6 +15,12 @@ struct TrainingWordsView<ViewModelType: TrainingWordsViewModel>: View {
         }
         .onAppear {
             viewModel.willAppear()
+        }
+        .onChange(of: viewModel.currentWordPair) { newValue in
+            animating = false
+            withAnimation(.linear(duration: viewModel.roundTime)) {
+                animating = true
+            }
         }
     }
     
@@ -29,9 +36,17 @@ struct TrainingWordsView<ViewModelType: TrainingWordsViewModel>: View {
             score.frame(alignment: .topTrailing)
             ZStack {
                 Color.clear
-                VStack {
+                VStack(spacing: 8) {
                     currentWord
                     translatedWord
+                        .offset(y: animating ? 240 : 0)
+                    Divider()
+                        .frame(height: 1)
+                        .overlay {
+                            Color.red
+                        }
+                        .padding(.top, 200)
+                        
                 }
                 VStack {
                     Spacer()
@@ -89,7 +104,7 @@ struct TrainingWordsView_Previews: PreviewProvider {
     }
     
     private final class TrainingWordsViewModelMock: TrainingWordsViewModel {
-        
+        var roundTime: TimeInterval = 0.0
         var currentWordPair: WordPair?
         @Published var isLoading: Bool = false
         @Published var correctAttemptsCount: Int = 10
