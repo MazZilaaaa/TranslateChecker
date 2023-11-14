@@ -9,13 +9,10 @@ protocol TrainingWordsViewModel: ObservableObject {
     func didTapWrong()
     func didTapCorrect()
     func setWordsCountForTrainig(_ count: Int)
-    
 }
 
 final class TrainingWordsViewModelImp {
-    private let wordsService: WordListService
-    private let wordPairGenerator: WordPairGenerator
-    
+    private let game: TrainingWordsGame
     weak var output: TrainingWordsOutput?
     
     @Published var isLoading: Bool = false
@@ -23,89 +20,59 @@ final class TrainingWordsViewModelImp {
     @Published var correctAttemptsCount: Int =  .zero
     @Published var wrongAttemptsCount: Int =  .zero
     
-    private var wordsCount: Int = .zero
-    private var wordsOffset: Int  = .zero
-    private var wordPairs: [WordPair] = []
-    private var lastResponse: WordListResponse?
-    
-    public init(
-        wordsService: WordListService,
-        wordPairGenerator: WordPairGenerator
-    ) {
-        self.wordsService = wordsService
-        self.wordPairGenerator = wordPairGenerator
-    }
-    
-    private func finish() {
-        output?.didFinishGame(with: TrainingWordsGameScore(wrongAttempts: wrongAttemptsCount, correctAttempts: correctAttemptsCount))
-    }
-    
-    private func checkRound(with status: WordPairTranslationStatus) {
-        if currentWordPair?.translationStatus == status {
-            correctAttemptsCount += 1
-        } else {
-            wrongAttemptsCount += 1
-        }
-    }
-    
-    private func startGame(wordsCount: Int, fromOffset: Int) {
-        isLoading = true
-        wordsService.getList(offset: fromOffset, size: wordsCount) { [weak self] result in
-            self?.isLoading = false
-            switch result {
-            case .success(let response):
-                self?.handle(response: response)
-            case .failure(let error):
-                self?.handle(error: error)
-            }
-        }
-    }
-    
-    private func handle(response: WordListResponse) {
-        lastResponse = response
-        wordsOffset = response.offset + response.totalCount
-        wordPairs = wordPairGenerator.generate(from: response.words, correctTranslations: 0.25)
-        nextRound()
-    }
-    
-    private func nextRound() {
-        guard wordPairs.count > 0 else {
-            finish()
-            return
-        }
-        
-        currentWordPair = wordPairs.removeFirst()
-    }
-    
-    private func handle(error: Error) {
-        // show error
+    public init(game: TrainingWordsGame) {
+        self.game = game
     }
 }
 
 extension TrainingWordsViewModelImp: TrainingWordsViewModel {
     func willAppear() {
+        game.start()
     }
     
     func didTapWrong() {
-        checkRound(with: .incorrect)
-        nextRound()
+        game.checkRound(with: .incorrect)
     }
     
     func didTapCorrect() {
-        checkRound(with: .correct)
-        nextRound()
+        game.checkRound(with: .correct)
     }
     
     func setWordsCountForTrainig(_ count: Int) {
-        wordsCount = count
-        startGame(wordsCount: count, fromOffset: wordsOffset)
+        game.setWordsCount(count)
     }
 }
 
 extension TrainingWordsViewModelImp: TrainingWordsInput {
     func restart() {
-        correctAttemptsCount = .zero
-        wrongAttemptsCount = .zero
-        startGame(wordsCount: wordsCount, fromOffset: lastResponse?.hasMore == true ? wordsOffset: .zero)
+        game.start()
+    }
+}
+
+extension TrainingWordsViewModelImp: TrainingWordsGameOutput {
+    func  didSetCurrentWordPair(_ pair: WordPair?) {
+        currentWordPair = pair
+    }
+    
+    func didChangeScore(_ score: TrainingWordsGameScore) {
+        correctAttemptsCount = score.correctAttempts
+        wrongAttemptsCount = score.wrongAttempts
+    }
+    
+    func didFinishGame(with score: TrainingWordsGameScore) {
+        output?.didFinishGame(with: score)
+    }
+    
+    func didStartLoadingWords() {
+        isLoading = true
+    }
+    
+    func didEndLoadingWords(error: Error?) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            self?.isLoading =  false
+            if let error = error {
+                // show error
+            }
+        }
     }
 }

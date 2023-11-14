@@ -3,7 +3,7 @@ enum WordPairTranslationStatus {
     case incorrect
 }
 
-struct WordPair {
+struct WordPair: Equatable {
     let value: String
     let translation: String
     let translationStatus: WordPairTranslationStatus

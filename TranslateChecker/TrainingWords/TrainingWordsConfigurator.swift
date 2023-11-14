@@ -5,11 +5,14 @@ typealias TrainingWordsModule = (controller: UIViewController, input: TrainingWo
 
 final class TrainingWordsConfigurator {
     func configure(wordsCountForTraining: Int, output: TrainingWordsOutput? = nil) -> TrainingWordsModule {
-        let viewModel = TrainingWordsViewModelImp(
+        let game = TrainingWordsGame(
             wordsService: WordListConfigurator().getWordsService(),
-            wordPairGenerator: WordPairGeneratorImpl()
+            wordsPairGenerator: WordPairGeneratorImpl()
         )
         
+        let viewModel = TrainingWordsViewModelImp(game: game)
+        
+        game.output = viewModel
         viewModel.setWordsCountForTrainig(wordsCountForTraining)
         viewModel.output = output
         let view = TrainingWordsView(viewModel: viewModel)

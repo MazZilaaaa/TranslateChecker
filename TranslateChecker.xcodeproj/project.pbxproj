@@ -22,6 +22,12 @@
 		FA4D34EB2B02B78500D3D6B2 /* WordPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34EA2B02B78500D3D6B2 /* WordPair.swift */; };
 		FA4D34ED2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34EC2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift */; };
 		FA4D34F32B03857D00D3D6B2 /* WordPairGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34F22B03857D00D3D6B2 /* WordPairGeneratorTests.swift */; };
+		FA4D34F52B03923500D3D6B2 /* TrainingWordsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34F42B03923500D3D6B2 /* TrainingWordsGame.swift */; };
+		FA4D34F72B039BFE00D3D6B2 /* TrainigWordsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34F62B039BFE00D3D6B2 /* TrainigWordsGameTests.swift */; };
+		FA4D34F92B039C5300D3D6B2 /* WordsListServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34F82B039C5300D3D6B2 /* WordsListServiceMock.swift */; };
+		FA4D34FB2B039CCF00D3D6B2 /* WordsPairGeneratorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34FA2B039CCF00D3D6B2 /* WordsPairGeneratorMock.swift */; };
+		FA4D34FD2B039DAF00D3D6B2 /* TrainingWordsGameOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34FC2B039DAF00D3D6B2 /* TrainingWordsGameOutputMock.swift */; };
+		FA4D34FF2B039EC900D3D6B2 /* WordListResponse+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34FE2B039EC900D3D6B2 /* WordListResponse+Stubs.swift */; };
 		FAD471932B013FB000C01009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471922B013FB000C01009 /* AppDelegate.swift */; };
 		FAD471952B013FB000C01009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471942B013FB000C01009 /* SceneDelegate.swift */; };
 		FAD4719C2B013FB500C01009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD4719B2B013FB500C01009 /* Assets.xcassets */; };
@@ -65,6 +71,12 @@
 		FA4D34EA2B02B78500D3D6B2 /* WordPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPair.swift; sourceTree = "<group>"; };
 		FA4D34EC2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingWordsGameScore.swift; sourceTree = "<group>"; };
 		FA4D34F22B03857D00D3D6B2 /* WordPairGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPairGeneratorTests.swift; sourceTree = "<group>"; };
+		FA4D34F42B03923500D3D6B2 /* TrainingWordsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingWordsGame.swift; sourceTree = "<group>"; };
+		FA4D34F62B039BFE00D3D6B2 /* TrainigWordsGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainigWordsGameTests.swift; sourceTree = "<group>"; };
+		FA4D34F82B039C5300D3D6B2 /* WordsListServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListServiceMock.swift; sourceTree = "<group>"; };
+		FA4D34FA2B039CCF00D3D6B2 /* WordsPairGeneratorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsPairGeneratorMock.swift; sourceTree = "<group>"; };
+		FA4D34FC2B039DAF00D3D6B2 /* TrainingWordsGameOutputMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingWordsGameOutputMock.swift; sourceTree = "<group>"; };
+		FA4D34FE2B039EC900D3D6B2 /* WordListResponse+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordListResponse+Stubs.swift"; sourceTree = "<group>"; };
 		FAD4718F2B013FB000C01009 /* TranslateChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD471922B013FB000C01009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD471942B013FB000C01009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +143,7 @@
 				FA4D34EF2B02C4B700D3D6B2 /* Services */,
 				FA4D34E22B02AE1900D3D6B2 /* TrainingWordsConfigurator.swift */,
 				FA4D34DE2B02A90400D3D6B2 /* TrainingWordsViewModel.swift */,
+				FA4D34F42B03923500D3D6B2 /* TrainingWordsGame.swift */,
 				FA4D34E62B02AE6B00D3D6B2 /* TrainingWordsOutput.swift */,
 				FA4D34E42B02AE4600D3D6B2 /* TrainingWordsInput.swift */,
 			);
@@ -166,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4D34F22B03857D00D3D6B2 /* WordPairGeneratorTests.swift */,
+				FA4D34F62B039BFE00D3D6B2 /* TrainigWordsGameTests.swift */,
 			);
 			path = TrainingWords;
 			sourceTree = "<group>";
@@ -296,6 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				FAE492482B01711E008578BE /* FileReaderMock.swift */,
+				FA4D34F82B039C5300D3D6B2 /* WordsListServiceMock.swift */,
+				FA4D34FA2B039CCF00D3D6B2 /* WordsPairGeneratorMock.swift */,
+				FA4D34FC2B039DAF00D3D6B2 /* TrainingWordsGameOutputMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -314,6 +331,7 @@
 			children = (
 				FAE4923F2B016121008578BE /* words.json */,
 				FAE4924F2B017320008578BE /* Word+Stubs.swift */,
+				FA4D34FE2B039EC900D3D6B2 /* WordListResponse+Stubs.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -439,6 +457,7 @@
 				FAE492292B0150D1008578BE /* WordListFileService.swift in Sources */,
 				FAE492272B01508B008578BE /* WordListService.swift in Sources */,
 				FA4D34ED2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift in Sources */,
+				FA4D34F52B03923500D3D6B2 /* TrainingWordsGame.swift in Sources */,
 				FA4D34E72B02AE6B00D3D6B2 /* TrainingWordsOutput.swift in Sources */,
 				FAD471952B013FB000C01009 /* SceneDelegate.swift in Sources */,
 			);
@@ -451,8 +470,13 @@
 				FAE492492B01711E008578BE /* FileReaderMock.swift in Sources */,
 				FAE492462B016E20008578BE /* DefaultFileReaderTests.swift in Sources */,
 				FAE492502B017320008578BE /* Word+Stubs.swift in Sources */,
+				FA4D34FB2B039CCF00D3D6B2 /* WordsPairGeneratorMock.swift in Sources */,
+				FA4D34F92B039C5300D3D6B2 /* WordsListServiceMock.swift in Sources */,
 				FAE492382B015AD6008578BE /* WordListFileServiceTests.swift in Sources */,
+				FA4D34FF2B039EC900D3D6B2 /* WordListResponse+Stubs.swift in Sources */,
+				FA4D34F72B039BFE00D3D6B2 /* TrainigWordsGameTests.swift in Sources */,
 				FA4D34F32B03857D00D3D6B2 /* WordPairGeneratorTests.swift in Sources */,
+				FA4D34FD2B039DAF00D3D6B2 /* TrainingWordsGameOutputMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

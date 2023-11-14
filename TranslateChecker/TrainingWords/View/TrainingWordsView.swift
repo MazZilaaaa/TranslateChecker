@@ -4,6 +4,27 @@ struct TrainingWordsView<ViewModelType: TrainingWordsViewModel>: View {
     @StateObject var viewModel: ViewModelType
     
     var body: some View {
+        ZStack {
+            content
+                .padding(16)
+            if viewModel.isLoading  {
+                loadingView
+                    .ignoresSafeArea()
+            }
+        }
+        .onAppear {
+            viewModel.willAppear()
+        }
+    }
+    
+    var loadingView: some View {
+        ZStack {
+            Color.gray.opacity(0.4)
+            ProgressView()
+        }
+    }
+    
+    var content: some View {
         VStack(alignment: .trailing) {
             score.frame(alignment: .topTrailing)
             ZStack {
@@ -17,10 +38,6 @@ struct TrainingWordsView<ViewModelType: TrainingWordsViewModel>: View {
                     actions
                 }
             }
-        }
-        .padding(16)
-        .onAppear {
-            viewModel.willAppear()
         }
     }
     

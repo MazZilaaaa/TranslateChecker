@@ -6,6 +6,7 @@
 | XCConfigs      | in progress      |
 | Linter         | in discussion    |
 | Code generator | in progress      |
+| Mock generator | await discussion |
 | UI tests       | await            |
 | Routing        | await discussion |
 | Multi modules  | await discussion |
@@ -17,8 +18,11 @@ Allows to set any building params before compile. It could be usefull to have al
 ## Linter
 Allows to keep code base in one code style, help to improve code review proccess
 
-## Code  generator
+## Code generator
 The tools like XCode templates or Generamba allows to reduce time for creating boiler plate code for new module. 
+
+## Mock generator
+It allows to generate mocks automatically.
 
 ## UITests
 UI tests are essential to a project as they automate the verification of the app's user interface, ensuring correct functionality, validating user interactions, supporting continuous integration, and providing confidence in the reliability of the app across various devices and scenarios.
