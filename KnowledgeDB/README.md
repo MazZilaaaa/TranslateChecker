@@ -1,6 +1,6 @@
 # KnowledgeDB
 
-Hi guys! Nice to see you here. Few words about the technical task.
+Hi again guys! Few words about the technical task.
 The structure of the project: for every feature i created separated folder. It allows us to move features into separated modules in case when our team will be grown
 
 For every feature we can  choose any architecture, in my case i choose MVVM, because it is a  bit more  convinient using SwiftUI because of bindings
