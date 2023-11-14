@@ -1,7 +1,7 @@
 import Foundation
 
 protocol DashboardViewModel: ObservableObject {
-    func trainingDidTap()
+    func trainingDidTap(wordsCount: Int, roundTime: TimeInterval)
 }
 
 final class DashboardViewModelImpl: ObservableObject {
@@ -13,9 +13,8 @@ extension DashboardViewModelImpl: DashboardInput {
 
 extension DashboardViewModelImpl: DashboardViewModel {
     
-    func trainingDidTap() {
-        // we can improve dashboard view to provide proper words count
-        output?.trainingDidTap(wordsCount: 15)
-        
+    func trainingDidTap(wordsCount: Int, roundTime: TimeInterval) {
+        // we can improve dashboard view to provide proper words count and round time
+        output?.trainingDidTap(wordsCount: wordsCount, roundTime: roundTime)
     }
 }

@@ -16,8 +16,8 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 
 extension SceneDelegate: DashboardOutput {
-    func trainingDidTap(wordsCount: Int) {
-        let module = TrainingWordsConfigurator().configure(wordsCountForTraining: wordsCount, output: self)
+    func trainingDidTap(wordsCount: Int, roundTime: TimeInterval) {
+        let module = TrainingWordsConfigurator().configure(wordsCountForTraining: wordsCount, roundTime: roundTime, output: self)
         trainingWordsInput = module.input
         
         window?.rootViewController?.present(module.controller, animated: true)

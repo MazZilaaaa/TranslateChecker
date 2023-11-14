@@ -10,6 +10,7 @@ protocol TrainingWordsGameOutput: AnyObject {
 
 protocol TrainingWordsGameProtocol {
     func setWordsCount(_ count: Int)
+    func setRoundTime(_ time: TimeInterval)
     func start()
     func checkRound(with status: WordPairTranslationStatus?)
 }
@@ -28,6 +29,7 @@ final class TrainingWordsGame {
     private var correctAttemptsCount: Int =  .zero
     private var wrongAttemptsCount: Int =  .zero
     private var timer: Timer?
+    private var roundTime: TimeInterval = 5
     
     init(wordsService: WordListService, wordsPairGenerator: WordPairGenerator) {
         self.wordsService = wordsService
@@ -50,6 +52,7 @@ final class TrainingWordsGame {
     }
     
     private func nextRound() {
+        timer?.invalidate()
         guard wordPairs.count > 0 else {
             finish()
             return
@@ -57,15 +60,15 @@ final class TrainingWordsGame {
         
         currentWordPair = wordPairs.removeFirst()
         output?.didSetCurrentWordPair(currentWordPair)
+        startTimer()
     }
     
     private func finish() {
-        timer?.invalidate()
         output?.didFinishGame(with: TrainingWordsGameScore(wrongAttempts: wrongAttemptsCount, correctAttempts: correctAttemptsCount))
     }
     
     private func startTimer() {
-        let timer = Timer(timeInterval: 5.0, target: self, selector: #selector(handleTimer), userInfo: nil, repeats: true)
+        let timer = Timer(timeInterval: roundTime, target: self, selector: #selector(handleTimer), userInfo: nil, repeats: false)
         RunLoop.current.add(timer, forMode: .common)
         self.timer = timer
     }
@@ -91,6 +94,10 @@ final class TrainingWordsGame {
 extension TrainingWordsGame: TrainingWordsGameProtocol {
     func setWordsCount(_ count: Int) {
         wordsCount = count
+    }
+    
+    func setRoundTime(_ time: TimeInterval) {
+        roundTime = time
     }
     
     func start() {

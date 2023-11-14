@@ -89,6 +89,7 @@ struct TrainingWordsView_Previews: PreviewProvider {
     }
     
     private final class TrainingWordsViewModelMock: TrainingWordsViewModel {
+        
         var currentWordPair: WordPair?
         @Published var isLoading: Bool = false
         @Published var correctAttemptsCount: Int = 10
@@ -106,6 +107,9 @@ struct TrainingWordsView_Previews: PreviewProvider {
         }
         
         func setWordsCountForTrainig(_ count: Int) {
+        }
+        
+        func setRoundTime(_ time: TimeInterval) {
         }
     }
 }

@@ -2,9 +2,23 @@ import SwiftUI
 
 struct DashboardView<ViewModelType: DashboardViewModel>: View {
     @StateObject var viewModel: ViewModelType
+    @State private var roundTime: Int = 5
+    @State private var wordsCount: Int = 15
     
     var body: some View {
         VStack {
+            Form {
+                Picker(selection: $roundTime, label: Text("Select round time")) {
+                    ForEach([5, 3, 2], id: \.self) { value in
+                        Text("\(value)")
+                    }
+                }
+                Picker(selection: $wordsCount, label: Text("Select words count")) {
+                    ForEach([5,  15, 30], id: \.self) { value in
+                        Text("\(value)")
+                    }
+                }
+            }
             Spacer()
             actions
         }
@@ -13,7 +27,7 @@ struct DashboardView<ViewModelType: DashboardViewModel>: View {
     var actions: some View {
         HStack(spacing: 16) {
             Button("Start training words") {
-                viewModel.trainingDidTap()
+                viewModel.trainingDidTap(wordsCount: wordsCount, roundTime: TimeInterval(roundTime))
             }
         }
     }
@@ -25,10 +39,7 @@ struct DashboardView_Previews: PreviewProvider {
     }
     
     private final class DashboardViewModelMock: DashboardViewModel {
-        func showAllWordsDidTap() {
-        }
-        
-        func trainingDidTap() {
+        func trainingDidTap(wordsCount: Int, roundTime: TimeInterval) {
         }
     }
 

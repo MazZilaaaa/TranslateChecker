@@ -4,7 +4,7 @@ import SwiftUI
 typealias TrainingWordsModule = (controller: UIViewController, input: TrainingWordsInput)
 
 final class TrainingWordsConfigurator {
-    func configure(wordsCountForTraining: Int, output: TrainingWordsOutput? = nil) -> TrainingWordsModule {
+    func configure(wordsCountForTraining: Int, roundTime: TimeInterval, output: TrainingWordsOutput? = nil) -> TrainingWordsModule {
         let game = TrainingWordsGame(
             wordsService: WordListConfigurator().getWordsService(),
             wordsPairGenerator: WordPairGeneratorImpl()
@@ -14,6 +14,7 @@ final class TrainingWordsConfigurator {
         
         game.output = viewModel
         viewModel.setWordsCountForTrainig(wordsCountForTraining)
+        viewModel.setRoundTime(roundTime)
         viewModel.output = output
         let view = TrainingWordsView(viewModel: viewModel)
         let  controller = UIHostingController(rootView: view)

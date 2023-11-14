@@ -9,6 +9,7 @@ protocol TrainingWordsViewModel: ObservableObject {
     func didTapWrong()
     func didTapCorrect()
     func setWordsCountForTrainig(_ count: Int)
+    func setRoundTime(_ time: TimeInterval)
 }
 
 final class TrainingWordsViewModelImp {
@@ -40,6 +41,10 @@ extension TrainingWordsViewModelImp: TrainingWordsViewModel {
     
     func setWordsCountForTrainig(_ count: Int) {
         game.setWordsCount(count)
+    }
+    
+    func setRoundTime(_ time: TimeInterval) {
+        game.setRoundTime(time)
     }
 }
 
