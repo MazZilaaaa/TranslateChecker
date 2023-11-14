@@ -12,7 +12,7 @@ protocol TrainingWordsViewModel: ObservableObject {
 }
 
 final class TrainingWordsViewModelImp {
-    private let game: TrainingWordsGame
+    private let game: TrainingWordsGameProtocol
     weak var output: TrainingWordsOutput?
     
     @Published var isLoading: Bool = false
@@ -20,7 +20,7 @@ final class TrainingWordsViewModelImp {
     @Published var correctAttemptsCount: Int =  .zero
     @Published var wrongAttemptsCount: Int =  .zero
     
-    public init(game: TrainingWordsGame) {
+    public init(game: TrainingWordsGameProtocol) {
         self.game = game
     }
 }
