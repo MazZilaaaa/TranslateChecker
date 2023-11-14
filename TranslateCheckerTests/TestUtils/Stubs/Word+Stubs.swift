@@ -2,7 +2,11 @@ import Foundation
 @testable import TranslateChecker
 
 extension Word {
-    static func tenWords() -> Data {
+    static func tenWords() -> [Word] {
+        try! JSONDecoder().decode([Word].self, from: tenWordsData())
+    }
+    
+    static func tenWordsData() -> Data {
         """
         [
             {

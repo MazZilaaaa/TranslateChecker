@@ -14,7 +14,7 @@ final class WordListFileServiceTests: XCTestCase {
     
     func test_getList() throws {
         // given
-        fileReader.completionResult = .success(Word.tenWords())
+        fileReader.completionResult = .success(Word.tenWordsData())
         
         // when
         let expectation = expectation(description: "test_getList")
@@ -36,13 +36,12 @@ final class WordListFileServiceTests: XCTestCase {
         XCTAssertEqual(wordResponse.words.count, 4)
         XCTAssertTrue(wordResponse.hasMore)
         XCTAssertEqual(fileReader.readFileURL, service.wordFileURL)
-        let words = try JSONDecoder().decode([Word].self, from: Word.tenWords())
-        XCTAssertEqual(Array(words.prefix(4)), wordResponse.words)
+        XCTAssertEqual(Array(Word.tenWords().prefix(4)), wordResponse.words)
     }
     
     func test_getList_outOfOffset() {
         // given
-        fileReader.completionResult = .success(Word.tenWords())
+        fileReader.completionResult = .success(Word.tenWordsData())
         
         // when
         let expectation = expectation(description: "test_getList")
@@ -67,7 +66,7 @@ final class WordListFileServiceTests: XCTestCase {
     
     func test_getList_outOfSize() throws {
         // given
-        fileReader.completionResult = .success(Word.tenWords())
+        fileReader.completionResult = .success(Word.tenWordsData())
         
         // when
         let expectation = expectation(description: "test_getList")
@@ -87,7 +86,6 @@ final class WordListFileServiceTests: XCTestCase {
         XCTAssertEqual(wordResponse.totalCount, 9)
         XCTAssertEqual(wordResponse.words.count, 9)
         XCTAssertFalse(wordResponse.hasMore)
-        let words = try JSONDecoder().decode([Word].self, from: Word.tenWords())
-        XCTAssertEqual(Array(words.suffix(from: 1)), wordResponse.words)
+        XCTAssertEqual(Array(Word.tenWords().suffix(from: 1)), wordResponse.words)
     }
 }

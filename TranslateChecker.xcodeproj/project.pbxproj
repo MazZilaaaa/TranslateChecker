@@ -21,6 +21,7 @@
 		FA4D34E92B02B73700D3D6B2 /* WordPairGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34E82B02B73700D3D6B2 /* WordPairGenerator.swift */; };
 		FA4D34EB2B02B78500D3D6B2 /* WordPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34EA2B02B78500D3D6B2 /* WordPair.swift */; };
 		FA4D34ED2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34EC2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift */; };
+		FA4D34F32B03857D00D3D6B2 /* WordPairGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4D34F22B03857D00D3D6B2 /* WordPairGeneratorTests.swift */; };
 		FAD471932B013FB000C01009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471922B013FB000C01009 /* AppDelegate.swift */; };
 		FAD471952B013FB000C01009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471942B013FB000C01009 /* SceneDelegate.swift */; };
 		FAD4719C2B013FB500C01009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD4719B2B013FB500C01009 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		FA4D34E82B02B73700D3D6B2 /* WordPairGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPairGenerator.swift; sourceTree = "<group>"; };
 		FA4D34EA2B02B78500D3D6B2 /* WordPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPair.swift; sourceTree = "<group>"; };
 		FA4D34EC2B02BB9A00D3D6B2 /* TrainingWordsGameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingWordsGameScore.swift; sourceTree = "<group>"; };
+		FA4D34F22B03857D00D3D6B2 /* WordPairGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPairGeneratorTests.swift; sourceTree = "<group>"; };
 		FAD4718F2B013FB000C01009 /* TranslateChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD471922B013FB000C01009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD471942B013FB000C01009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FA4D34F12B03856000D3D6B2 /* TrainingWords */ = {
+			isa = PBXGroup;
+			children = (
+				FA4D34F22B03857D00D3D6B2 /* WordPairGeneratorTests.swift */,
+			);
+			path = TrainingWords;
+			sourceTree = "<group>";
+		};
 		FA9877982B02A5B800EAFEAE /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,11 +208,11 @@
 		FAD471912B013FB000C01009 /* TranslateChecker */ = {
 			isa = PBXGroup;
 			children = (
-				FA4D34DD2B02A81C00D3D6B2 /* TrainingWords */,
-				FAE492412B0169F8008578BE /* Utils */,
 				FA33078E2B02609F00105A26 /* Dashboard */,
+				FA4D34DD2B02A81C00D3D6B2 /* TrainingWords */,
 				FAE4921D2B014F29008578BE /* WordList */,
 				FAE0C1C42B0146D100ED2E53 /* Resources */,
+				FAE492412B0169F8008578BE /* Utils */,
 				FAD471922B013FB000C01009 /* AppDelegate.swift */,
 				FAD471942B013FB000C01009 /* SceneDelegate.swift */,
 			);
@@ -212,10 +222,11 @@
 		FAD471A82B013FB500C01009 /* TranslateCheckerTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAE4924A2B01724F008578BE /* TestUtils */,
-				FAE492442B016E11008578BE /* Utils */,
 				FA9877982B02A5B800EAFEAE /* Dashboard */,
+				FA4D34F12B03856000D3D6B2 /* TrainingWords */,
 				FAE492352B015ABE008578BE /* WordList */,
+				FAE492442B016E11008578BE /* Utils */,
+				FAE4924A2B01724F008578BE /* TestUtils */,
 			);
 			path = TranslateCheckerTests;
 			sourceTree = "<group>";
@@ -469,6 +480,7 @@
 				FAE492462B016E20008578BE /* DefaultFileReaderTests.swift in Sources */,
 				FAE492502B017320008578BE /* Word+Stubs.swift in Sources */,
 				FAE492382B015AD6008578BE /* WordListFileServiceTests.swift in Sources */,
+				FA4D34F32B03857D00D3D6B2 /* WordPairGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
