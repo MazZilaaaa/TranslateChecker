@@ -23,6 +23,6 @@ final class WordPairGeneratorImpl: WordPairGenerator {
         
         let correctedWordPairs = Array(words.prefix(correctedWordsCount)).map { WordPair(value: $0.value, translation: $0.transaltionSpa, translationStatus: .correct) }
         
-        return correctedWordPairs  + wordsPairs
+        return (correctedWordPairs  + wordsPairs).shuffled()
     }
 }

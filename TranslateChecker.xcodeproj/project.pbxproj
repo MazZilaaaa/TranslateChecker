@@ -26,14 +26,9 @@
 		FAD471952B013FB000C01009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD471942B013FB000C01009 /* SceneDelegate.swift */; };
 		FAD4719C2B013FB500C01009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD4719B2B013FB500C01009 /* Assets.xcassets */; };
 		FAD4719F2B013FB500C01009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD4719D2B013FB500C01009 /* LaunchScreen.storyboard */; };
-		FAE4921F2B014F82008578BE /* WordListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4921E2B014F82008578BE /* WordListPresenter.swift */; };
 		FAE492212B014F9F008578BE /* WordListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492202B014F9F008578BE /* WordListConfigurator.swift */; };
-		FAE492232B014FDF008578BE /* WordListInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492222B014FDF008578BE /* WordListInput.swift */; };
-		FAE492252B01502C008578BE /* WordListOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492242B01502C008578BE /* WordListOutput.swift */; };
 		FAE492272B01508B008578BE /* WordListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492262B01508B008578BE /* WordListService.swift */; };
 		FAE492292B0150D1008578BE /* WordListFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492282B0150D1008578BE /* WordListFileService.swift */; };
-		FAE4922B2B015174008578BE /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4922A2B015174008578BE /* WordListViewController.swift */; };
-		FAE4922D2B0151A8008578BE /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4922C2B0151A8008578BE /* WordListView.swift */; };
 		FAE492322B0151DF008578BE /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492312B0151DF008578BE /* Word.swift */; };
 		FAE492342B0153E0008578BE /* WordListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492332B0153E0008578BE /* WordListResponse.swift */; };
 		FAE492382B015AD6008578BE /* WordListFileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE492372B015AD6008578BE /* WordListFileServiceTests.swift */; };
@@ -77,14 +72,9 @@
 		FAD4719E2B013FB500C01009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD471A02B013FB500C01009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD471A52B013FB500C01009 /* TranslateCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAE4921E2B014F82008578BE /* WordListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListPresenter.swift; sourceTree = "<group>"; };
 		FAE492202B014F9F008578BE /* WordListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListConfigurator.swift; sourceTree = "<group>"; };
-		FAE492222B014FDF008578BE /* WordListInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListInput.swift; sourceTree = "<group>"; };
-		FAE492242B01502C008578BE /* WordListOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListOutput.swift; sourceTree = "<group>"; };
 		FAE492262B01508B008578BE /* WordListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListService.swift; sourceTree = "<group>"; };
 		FAE492282B0150D1008578BE /* WordListFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListFileService.swift; sourceTree = "<group>"; };
-		FAE4922A2B015174008578BE /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
-		FAE4922C2B0151A8008578BE /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
 		FAE492312B0151DF008578BE /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		FAE492332B0153E0008578BE /* WordListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListResponse.swift; sourceTree = "<group>"; };
 		FAE492372B015AD6008578BE /* WordListFileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListFileServiceTests.swift; sourceTree = "<group>"; };
@@ -247,22 +237,9 @@
 			children = (
 				FAE492302B0151D4008578BE /* Models */,
 				FAE4922F2B0151B9008578BE /* Services */,
-				FAE4922E2B0151AC008578BE /* Views */,
 				FAE492202B014F9F008578BE /* WordListConfigurator.swift */,
-				FAE4921E2B014F82008578BE /* WordListPresenter.swift */,
-				FAE492222B014FDF008578BE /* WordListInput.swift */,
-				FAE492242B01502C008578BE /* WordListOutput.swift */,
 			);
 			path = WordList;
-			sourceTree = "<group>";
-		};
-		FAE4922E2B0151AC008578BE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FAE4922A2B015174008578BE /* WordListViewController.swift */,
-				FAE4922C2B0151A8008578BE /* WordListView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		FAE4922F2B0151B9008578BE /* Services */ = {
@@ -443,20 +420,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE492252B01502C008578BE /* WordListOutput.swift in Sources */,
-				FAE492232B014FDF008578BE /* WordListInput.swift in Sources */,
-				FAE4922B2B015174008578BE /* WordListViewController.swift in Sources */,
 				FA3307A32B02682B00105A26 /* DashboardViewModel.swift in Sources */,
 				FA3307962B02616B00105A26 /* DashboardConfigurator.swift in Sources */,
 				FAE492432B016A03008578BE /* FileReader.swift in Sources */,
 				FAE492212B014F9F008578BE /* WordListConfigurator.swift in Sources */,
 				FA4D34DF2B02A90400D3D6B2 /* TrainingWordsViewModel.swift in Sources */,
 				FAD471932B013FB000C01009 /* AppDelegate.swift in Sources */,
-				FAE4921F2B014F82008578BE /* WordListPresenter.swift in Sources */,
 				FA4D34E92B02B73700D3D6B2 /* WordPairGenerator.swift in Sources */,
 				FA4D34EB2B02B78500D3D6B2 /* WordPair.swift in Sources */,
 				FAE492322B0151DF008578BE /* Word.swift in Sources */,
-				FAE4922D2B0151A8008578BE /* WordListView.swift in Sources */,
 				FA4D34E32B02AE1900D3D6B2 /* TrainingWordsConfigurator.swift in Sources */,
 				FA4D34E12B02A95F00D3D6B2 /* TrainingWordsView.swift in Sources */,
 				FA3307942B0260F200105A26 /* DashboardOutput.swift in Sources */,

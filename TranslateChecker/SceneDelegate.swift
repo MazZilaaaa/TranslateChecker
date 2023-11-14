@@ -22,11 +22,6 @@ extension SceneDelegate: DashboardOutput {
         
         window?.rootViewController?.present(module.controller, animated: true)
     }
-    
-    func showAllWordsDidTap() {
-        let wordsListModule = WordListConfigurator().configure()
-        window?.rootViewController?.present(wordsListModule.controller, animated: true)
-    }
 }
 
 extension SceneDelegate: TrainingWordsOutput {

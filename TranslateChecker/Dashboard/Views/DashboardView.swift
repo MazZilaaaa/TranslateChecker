@@ -12,9 +12,6 @@ struct DashboardView<ViewModelType: DashboardViewModel>: View {
     
     var actions: some View {
         HStack(spacing: 16) {
-            Button("Show all words") {
-                viewModel.showAllWordsDidTap()
-            }
             Button("Start training words") {
                 viewModel.trainingDidTap()
             }
