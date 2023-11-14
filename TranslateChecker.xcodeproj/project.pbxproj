@@ -51,13 +51,6 @@
 			remoteGlobalIDString = FAD4718E2B013FB000C01009;
 			remoteInfo = TranslateChecker;
 		};
-		FAD471B02B013FB500C01009 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAD471872B013FB000C01009 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAD4718E2B013FB000C01009;
-			remoteInfo = TranslateChecker;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -82,7 +75,6 @@
 		FAD4719E2B013FB500C01009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD471A02B013FB500C01009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAD471A52B013FB500C01009 /* TranslateCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAD471AF2B013FB500C01009 /* TranslateCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE4921E2B014F82008578BE /* WordListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListPresenter.swift; sourceTree = "<group>"; };
 		FAE492202B014F9F008578BE /* WordListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListConfigurator.swift; sourceTree = "<group>"; };
 		FAE492222B014FDF008578BE /* WordListInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListInput.swift; sourceTree = "<group>"; };
@@ -110,13 +102,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FAD471A22B013FB500C01009 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD471AC2B013FB500C01009 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,7 +191,6 @@
 			children = (
 				FAD4718F2B013FB000C01009 /* TranslateChecker.app */,
 				FAD471A52B013FB500C01009 /* TranslateCheckerTests.xctest */,
-				FAD471AF2B013FB500C01009 /* TranslateCheckerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -384,24 +368,6 @@
 			productReference = FAD471A52B013FB500C01009 /* TranslateCheckerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FAD471AE2B013FB500C01009 /* TranslateCheckerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAD471BF2B013FB600C01009 /* Build configuration list for PBXNativeTarget "TranslateCheckerUITests" */;
-			buildPhases = (
-				FAD471AB2B013FB500C01009 /* Sources */,
-				FAD471AC2B013FB500C01009 /* Frameworks */,
-				FAD471AD2B013FB500C01009 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAD471B12B013FB500C01009 /* PBXTargetDependency */,
-			);
-			name = TranslateCheckerUITests;
-			productName = TranslateCheckerUITests;
-			productReference = FAD471AF2B013FB500C01009 /* TranslateCheckerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -416,10 +382,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					FAD471A42B013FB500C01009 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = FAD4718E2B013FB000C01009;
-					};
-					FAD471AE2B013FB500C01009 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = FAD4718E2B013FB000C01009;
 					};
@@ -440,7 +402,6 @@
 			targets = (
 				FAD4718E2B013FB000C01009 /* TranslateChecker */,
 				FAD471A42B013FB500C01009 /* TranslateCheckerTests */,
-				FAD471AE2B013FB500C01009 /* TranslateCheckerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -461,13 +422,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE492402B016121008578BE /* words.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAD471AD2B013FB500C01009 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,13 +472,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAD471AB2B013FB500C01009 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -532,11 +479,6 @@
 			isa = PBXTargetDependency;
 			target = FAD4718E2B013FB000C01009 /* TranslateChecker */;
 			targetProxy = FAD471A62B013FB500C01009 /* PBXContainerItemProxy */;
-		};
-		FAD471B12B013FB500C01009 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAD4718E2B013FB000C01009 /* TranslateChecker */;
-			targetProxy = FAD471B02B013FB500C01009 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -756,40 +698,6 @@
 			};
 			name = Release;
 		};
-		FAD471C02B013FB600C01009 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.babbel.TranslateCheckerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TranslateChecker;
-			};
-			name = Debug;
-		};
-		FAD471C12B013FB600C01009 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.babbel.TranslateCheckerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TranslateChecker;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -816,15 +724,6 @@
 			buildConfigurations = (
 				FAD471BD2B013FB600C01009 /* Debug */,
 				FAD471BE2B013FB600C01009 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAD471BF2B013FB600C01009 /* Build configuration list for PBXNativeTarget "TranslateCheckerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAD471C02B013FB600C01009 /* Debug */,
-				FAD471C12B013FB600C01009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
