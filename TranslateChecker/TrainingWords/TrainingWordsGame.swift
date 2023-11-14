@@ -68,6 +68,7 @@ final class TrainingWordsGame {
     }
     
     private func startTimer() {
+        self.timer?.invalidate()
         let timer = Timer(timeInterval: roundTime, target: self, selector: #selector(handleTimer), userInfo: nil, repeats: false)
         RunLoop.current.add(timer, forMode: .common)
         self.timer = timer
